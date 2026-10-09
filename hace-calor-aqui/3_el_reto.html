@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="exe_effects.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>3. El reto | ¿Hace calor aquí? </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Jorge Lobo Martínez" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.9 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="exe_effects.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<link rel="stylesheet" type="text/css" href="udl-content.css" />
+<script type="text/javascript" src="udl-content.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site exe-atools" id="exe-node-3"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<header id="header" ><div id="headerContent">¿Hace calor aquí?</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">¿Hace calor aquí?</a></li>
+   <li><a href="1_qu_vamos_a_hacer.html" class="no-ch">1. ¿Qué vamos a hacer?</a></li>
+   <li><a href="2_exploramos_y_practicamos.html" class="no-ch">2. Exploramos y practicamos</a></li>
+   <li id="active"><a href="3_el_reto.html" class="active no-ch">3. El reto</a></li>
+   <li><a href="4_qu_hemos_aprendido.html" class="no-ch">4. ¿Qué hemos aprendido?</a></li>
+   <li><a href="5_crditos.html" class="no-ch">5. Créditos</a></li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="2_exploramos_y_practicamos.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="4_qu_hemos_aprendido.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">3. El reto</h1></header>
+<article class="iDevice_wrapper textIdevice" id="id10">
+<div class="iDevice emphasis0" >
+<div id="ta10_127_2" class="block iDevice_content">
+<div class="exe-text"><p><img src="gif_animado_narrador_juvenil.gif" alt="" width="250" height="250" style="float: left;" />Ha llegado el momento de poner en macha el proyecto para medir el calor en el aula. Vais a programar la placa EchidnaBlack2 para que registre la temperatura cada cierto tiempo para crear una gráfica de temperaturas.</p>
+<p>Después, tendréis que pensar qué cambios podríais hacer para mejorarla: ¿y si abrimos las ventanas en otro momento?, ¿cambiamos las mesas de sitio?, ¿ponemos plantas o cortinas? Aplicad estos cambios y volved a medir.</p>
+<p>Con los datos que obtengáis, crearéis gráficas y podréis analizar científicamente qué opción funciona mejor.<br />¡Vamos a usar la tecnología para cuidar de nuestro bienestar!</p></div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper UDLcontentIdevice em_iDevice em_iDevice_udl_exp_competenciadigital" id="id28">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_udl_exp_competenciadigital.svg)"><h1 class="iDeviceTitle">3.1 ¡Programamos!</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta28_132_2" class="block iDevice_content">
+<div class="exe-udlContent exe-udlContent-expression"><section class="exe-udlContent-block"><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><div class="exe-fx exe-carousel">
+<h2>Un fondo para la gráfica</h2>
+<p>Para poder ver gráficamente la medida de la temperatura a lo largo del la jornada puedes usar este fondo de pantalla en el que vienen las diferentes temperaturas. Para que se vea mejor, las líneas están un poco separadas entre sí, así que tendremos que hacer una pequeña operación matemática para que todo funcione perfectamente, pero no te preocupes, eso lo veremos más ademante.</p>
+<p>En este vídeo puedes ver cómo subir el fondeo de pantalla, que puedes descargar <a href="grafica.png" target="_blank" rel="noopener">haciendo clic aquí</a>.</p>
+<p style="text-align: center;"><iframe width="750" height="314" src="https://www.youtube.com/embed/GomvWyTLf6A" allowfullscreen="allowfullscreen"></iframe></p>
+<h2>Operación para adaptar el gráfico</h2>
+<p><img src="valorY.png" width="300" height="166" style="float: right;">Para que el gato de Scratch marque la temperatura vamos a hacer que se desplace hacia arriba o hacia abajo (eje y). Para esto, primero reducimos el tamaño del gato a 10, y usamos el bloque "Dar&nbsp; y el valor ...", en el que el valor será la lectura del sensor (figura 1). Esto va a hacer que el gatito suba o baje con la temperatura, pero cambiará solo un paso o pixel por cada grado. Como esto es muy poco para poder diferenciarlo bien, la escala del fondo se ha hecho con las lineas de cada grado separadas 4 pasos o píxeles. Por eso, para que el gato vaya al punto correcto, tendremos que multiplicar el valor por 4 (figura 2).</p>
+
+<p>Puedes ver la diferencia de funcionamiento en este vídeo:</p>
+<p style="text-align: center;"><iframe width="750" height="314" src="https://www.youtube.com/embed/TSxzQfsrWc4" allowfullscreen="allowfullscreen"></iframe></p>
+<h2>Dibujando la gráfica</h2>
+<p>Es momento de dibujar la gráfica. Ya sabes cómo desplazar al gato a la altura correcta para marcar la temperatura. Ahora hay que hacer que dibuje la gráfica. para esto:</p>
+<ol>
+<li>Tendremos que agregar los bloques de Lápiz.</li>
+<li>Primero pondremos un bloque de borrar, por si hay algo dibujado.</li>
+<li>También pondremos un bloque de levantar el lápiz, para que deje de pinta si estaba haciéndolo.</li>
+<li>Después desplazaremos al gato al punto de inicio.</li>
+<li>Luego bajaremos el lápiz para empezar a pintar la gráfica.</li>
+<li>Por último, haremos que el gato se desplace al punto que indique la temperatura en el eje y un paso o pixel hacia la derecha en el eje x cada cierto tiempo.</li>
+</ol>
+<p>Puedes hacerlo ordenando estos bloques. en la siguiente imagen podrás ver el programa completo, pero es mejor que lo intentes antes sin mirar.</p>
+<p style="text-align: center;"><img src="bloques_reto.png" alt="" width="751" height="283"></p>
+<h2>Una posible solución</h2>
+<p>Esta es una posible solución. Prueba a subir y bajar la temperatura del sensor para comprobar cómo funciona.</p>
+<p style="text-align: center;"><img src="bloquesreto2.png" alt="" width="400" height="500"></p>
+<h2>Probamos</h2>
+<p>Así es cómo podría verse el proyecto funcionando:</p>
+<p style="text-align: center;"><iframe width="750" height="314" src="https://www.youtube.com/embed/Ccp8P_sjq_M" allowfullscreen="allowfullscreen"></iframe></p>
+<p>¿Qué te parece el fondo del vídeo? ¿Mejor que en blanco?&nbsp;</p>
+<p>¡Pues decora tu fondo para personalizarlo a tu gusto!</p>
+</div></div><article class="exe-udlContent-content-simplified js-hidden"><header class='exe-udlContent-alt-content-title'><h2>Lectura facilitada</h2></header><p>En esta actividad puedes elegir entre dos formas de hacer el cartel interactivo.</p>
+<p>Una es más fácil: el cartel cambia del día a la noche.</p>
+<p>La otra es un poco más difícil: el cartel va cambiando poco a poco según la luz.</p>
+<p>Puedes escoger la opción que prefieras.</p>
+<p>También puedes empezar con la fácil y luego probar la difícil.</p>
+<p>No hay una opción mejor que otra. Lo importante es que te sientas bien y disfrutes mientras aprendes.</p><button class="exe-udlContent-alt-content-hide">Cerrar</button></article></div></section></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper UDLcontentIdevice em_iDevice em_iDevice_udl_exp_mediacion" id="id44">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_udl_exp_mediacion.svg)"><h1 class="iDeviceTitle">3.2 Plan de investigación</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta44_127_2" class="block iDevice_content">
+<div class="exe-udlContent exe-udlContent-expression"><section class="exe-udlContent-block"><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p><img src="Disenamosnuestroexperimento.png" width="267" height="400" style="float: right;">Ya tenemos nuestro dispositivo para medir la temperatura listo, pero… ¿cómo vamos a usarlo?</p>
+<p>Antes de empezar a recoger datos, necesitamos pensar como verdaderos científicos y científicas: hay que <strong>diseñar un buen pla</strong>n. Eso significa decidir <strong>cuándo vamos a medir</strong> (¿cada hora? ¿cada 30 minutos? ¿cada 10?), <strong>dónde colocaremos la placa</strong> EchidnaBlack2, etc.</p>
+<p>Después, toca<strong> imaginar y poner en práctica algunas ideas para bajar la temperatura</strong> del aula: mover las mesas, abrir o cerrar ventanas, poner carteles en las ventanas, usar plantas, colgar cortinas… ¡lo que se os ocurra!</p>
+<p>También debéis pensar&nbsp;si aplicar las medidas y tomar datos de temperatura durante todo un día antes de probar otra solución o si es mejor probar varias el mismo día.</p>
+<p>Y lo más importante: vamos a <strong>comparar los resultados.</strong> Gracias a las gráficas, veremos qué soluciones han funcionado mejor.</p>
+<p>¿Preparados y preparadas para diseñar vuestro propio experimento científico?</p>
+<p>Podéis usar esta ficha para organizar vuestras ideas.</p>
+<p>Puedes descargar aquí la ficha de trabajo:</p>
+<ul>
+<li><a href="DisenamosNuestroExperimento.pdf" target="_blank" rel="noopener">Ficha en PDF</a></li>
+<li><a href="DisenamosNuestroExperimento.odt" target="_blank" rel="noopener">Ficha en odt</a></li>
+</ul></div></div></section></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper UDLcontentIdevice" id="id25">
+<div class="iDevice emphasis0" >
+<div id="ta25_129_2" class="block iDevice_content">
+<div class="exe-udlContent exe-udlContent-engagement"><section class="exe-udlContent-block js-hidden"><header class="exe-udlContent-header exe-udlContent-character-3"><h2>Reflexionamos sobre nuestro cartel interactivo</h2></header><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p>Hemos creado un proyecto científico real para medir el calor en clase, hemos programado, hecho pruebas, analizado datos... ¡y hasta pensado soluciones para mejorar nuestra aula!</p>
+<p>Ahora es buen momento para parar un momento y pensar en todo lo que hemos aprendido.&nbsp;Puedes responder a estas preguntas por escrito o usarlas para entrevistar a un compañero o compañera. ¡Tú eliges!</p>
+<p><br>Preguntas para reflexionar:</p>
+<ul>
+<li>¿He conseguido que mi placa mida la temperatura correctamente?</li>
+<li>¿He entendido cómo funciona el sensor de temperatura?</li>
+<li>¿He sido capaz de crear un programa en EchidnaML para recoger los datos?</li>
+<li>¿He entendido cómo se leen e interpretan las gráficas?</li>
+<li>¿He pensado y probado alguna solución para bajar la temperatura del aula?</li>
+<li>¿He trabajado bien con mi grupo y escuchado las ideas de los demás?</li>
+<li>¿He aprendido algo nuevo sobre el clima y cómo nos afecta?</li>
+<li>¿Me siento más capaz de usar la tecnología para resolver problemas reales?</li>
+</ul></div><article class="exe-udlContent-content-simplified js-hidden"><header class='exe-udlContent-alt-content-title'><h2>Lectura facilitada</h2></header><p>Esta parte del proyecto ha sido muy importante, porque hemos usado todo lo que hemos aprendido: programación, diseño y creatividad. ¡Y hemos logrado que nuestro cartel cambie con la luz!</p>
+<p>Antes de seguir, es un buen momento para pensar en todo lo que hemos conseguido.</p>
+<p>Puedes contestar tú o hablarlo con un compañero o compañera, como si fuera una entrevista.</p>
+<ul>
+<li>¿Has conseguido que el cartel reaccione a la luz?</li>
+<li>¿Entiendes cómo funciona el sensor?</li>
+<li>¿Tu cartel tiene un mensaje claro y creativo?</li>
+<li>¿Has trabajado bien en equipo y has solucionado problemas?</li>
+<li>¿Sabes explicar cómo funciona tu cartel y para qué sirve cada parte?</li>
+</ul>
+<p>Reflexionar te ayudará a darte cuenta de todo lo que has aprendido</p><button class="exe-udlContent-alt-content-hide">Cerrar</button></article></div></section></div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Reconocimiento Compartir igual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="2_exploramos_y_practicamos.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="4_qu_hemos_aprendido.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Creado con eXeLearning<span> (Ventana nueva)</span></span></a></p><script type="text/javascript" src="_escolares_js.js"></script></body></html>
